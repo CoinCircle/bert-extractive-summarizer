@@ -75,7 +75,7 @@ def convert_raw_text_by_ratio():
 @app.route('/summarize_by_sentence', methods=['POST'])
 def convert_raw_text_by_sent():
     num_sentences = int(request.args.get('num_sentences', 5))
-    min_length = int(request.args.get('min_length', 25))
+    min_length = int(request.args.get('min_length', 40))
     max_length = int(request.args.get('max_length', 500))
 
     data = request.data
